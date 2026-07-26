@@ -1,0 +1,41 @@
+{
+    "author": "Ninots Framework",
+    "description": "Middleware Pipeline for Bun",
+    "devDependencies": {
+        "@types/bun": "^1.3.13"
+    },
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./index.ts",
+            "default": "./index.ts"
+        }
+    },
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "bun",
+        "middleware",
+        "pipeline",
+        "http",
+        "typescript"
+    ],
+    "license": "MIT",
+    "name": "@ninots/middleware",
+    "peerDependencies": {
+        "typescript": "^6.0.3"
+    },
+    "scripts": {
+        "test": "bun test",
+        "typecheck": "tsc --noEmit"
+    },
+    "type": "module",
+    "version": "0.0.1",
+    "types": "./dist/index.d.ts",
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org"
+    }
+}
