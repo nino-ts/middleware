@@ -12,7 +12,12 @@
         }
     },
     "files": [
+        "LICENSE",
+        "README.md",
         "dist",
+        "dist/index.d.ts",
+        "index.ts",
+        "jsr.json",
         "src"
     ],
     "keywords": [
@@ -37,5 +42,13 @@
     "publishConfig": {
         "access": "public",
         "registry": "https://registry.npmjs.org"
-    }
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nino-ts/middleware.git"
+    },
+    "bugs": {
+        "url": "https://github.com/nino-ts/middleware/issues"
+    },
+    "homepage": "https://github.com/nino-ts/middleware#readme"
 }
