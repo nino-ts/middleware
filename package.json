@@ -1,54 +1,23 @@
 {
-    "author": "Ninots Framework",
-    "description": "Middleware Pipeline for Bun",
-    "devDependencies": {
-        "@types/bun": "^1.3.13"
-    },
-    "exports": {
-        ".": {
-            "types": "./dist/index.d.ts",
-            "import": "./index.ts",
-            "default": "./index.ts"
-        }
-    },
-    "files": [
-        "LICENSE",
-        "README.md",
-        "dist",
-        "dist/index.d.ts",
-        "index.ts",
-        "jsr.json",
-        "src"
-    ],
-    "keywords": [
-        "bun",
-        "middleware",
-        "pipeline",
-        "http",
-        "typescript"
-    ],
-    "license": "MIT",
     "name": "@ninots/middleware",
-    "peerDependencies": {
-        "typescript": "^6.0.3"
-    },
-    "scripts": {
-        "test": "bun test",
-        "typecheck": "tsc --noEmit"
-    },
+    "main": "index.ts",
+    "module": "index.ts",
     "type": "module",
     "version": "0.0.1",
+    "description": "Middleware Pipeline for Bun",
+    "author": "Ninots Framework",
+    "keywords": ["bun","middleware","pipeline","http","typescript"],
+    "license": "MIT",
+    "scripts": { "test": "bun test" },
+    "publishConfig": { "access": "public", "registry": "https://registry.npmjs.org" },
+    "repository": { "type": "git", "url": "https://github.com/nino-ts/middleware.git" },
+    "bugs": { "url": "https://github.com/nino-ts/middleware/issues" },
+    "homepage": "https://github.com/nino-ts/middleware#readme",
+    "devDependencies": { "@types/bun": "latest" },
+    "peerDependencies": { "typescript": "^6.0.3" },
+    "exports": { ".": { "types": "./dist/index.d.ts", "import": "./index.ts", "default": "./index.ts" } },
     "types": "./dist/index.d.ts",
-    "publishConfig": {
-        "access": "public",
-        "registry": "https://registry.npmjs.org"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/nino-ts/middleware.git"
-    },
-    "bugs": {
-        "url": "https://github.com/nino-ts/middleware/issues"
-    },
-    "homepage": "https://github.com/nino-ts/middleware#readme"
+    "files": ["LICENSE", "README.md", "dist", "dist/index.d.ts", "index.ts", "jsr.json", "src"],
+    "engines": { "bun": ">=1.0.0" },
+    "packageManager": "~bun@1.0.0"
 }
